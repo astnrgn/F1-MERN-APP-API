@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node f1-mern-app-api/index.js"
   },
   "keywords": [],
   "author": "Austin Regan",
