@@ -12,9 +12,9 @@ module.exports = {
   },
 
   update: (req, res) => {
-    Driver.findOneAndUpdate({ _id: req.params.id }).then(driver =>
-      res.json(driver)
-    );
+    Driver.findOneAndUpdate({ _id: req.params.id }, req.body, {
+      new: true
+    }).then(driver => res.json(driver));
   },
 
   delete: (req, res) => {

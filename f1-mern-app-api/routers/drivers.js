@@ -6,3 +6,5 @@ router.get("/", driverController.index);
 router.post("/", driverController.create);
 router.put("/:id", driverController.update);
 router.delete("/:id", driverController.delete);
+
+module.exports = router;
