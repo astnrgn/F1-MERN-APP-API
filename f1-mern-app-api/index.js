@@ -4,4 +4,6 @@ const app = express();
 
 app.use(parser.json());
 
-app.listen(3000, () => console.log("server running on 3000"));
+app.use(require("./routers/index.js"));
+
+app.listen(3001, () => console.log("server running on 3001"));
